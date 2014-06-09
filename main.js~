@@ -1,15 +1,15 @@
 window.onload=function(){
 
-    (function(){
 	var player = new Chara();
-	//var stage1 = new map();
+    (function(){
 
-    
+	//var stage1 = new map();
+//    
 	//	stage1.drawMap();
 	player.drawChara();
     })();
-	
-    
+ player.moveChara();   
+
     
 }
 var Chara = function(){
@@ -22,19 +22,24 @@ var Chara = function(){
     var x,y = 10;
     var vx,vy;
     */
-    
-    (function(){document.createElement("id")})()
-    var picture;
 
+
+    
+   // (function(){document.createElement("id")})()
+    var picture;
+    picture = document.createElement("img");
+    picture.id = "ch"; 
+	document.body.appendChild(picture);
     this.moveChara = function(){
-	self.x = vx + x;
-	self.y = vy +y;
+	self.x = event.clientX;
+	document.getElementById("ch").style.left= self.x;
+	//self.y = vy +y;
     };
 
     this.drawChara=function(){
-	self.picture = document.createElement("img");
-	document.body.appendChild(self.picture);
-	self.picture.src = "pict/chara01.png";
+  
+
+	picture.src = "pict/chara01.png";
     }
 };
 

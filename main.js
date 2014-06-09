@@ -2,9 +2,7 @@ window.onload=function(){
 
 	var player = new Chara();
     (function(){
-
-	//var stage1 = new map();
-//    
+	//var stage1 = new map();    
 	//	stage1.drawMap();
 	player.drawChara();
     })();
@@ -16,15 +14,8 @@ var Chara = function(){
   
     var self;
     self = this;
-    /*
-    var SPEED = 5;
-    var JUMP = 10;
-    var x,y = 10;
-    var vx,vy;
-    */
-
-
-    
+var abd;
+var lll;    
    // (function(){document.createElement("id")})()
     var picture;
     picture = document.createElement("img");
